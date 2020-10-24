@@ -89,7 +89,7 @@ namespace Interfaz_del_sistema
         private void Actualizar()
         {
             string connection = "datasource=localhost;port=3306;username=root;password=;database=materia;";
-            string query = "UPDATE `alumno` SET `First name`='" + textBox1.Text + "',`Last name`='" + textBox2.Text + "',`Address`='" + textBox3.Text + "' WHERE ID = '" + textBox4.Text + "' ";
+            string query = "UPDATE `alumno` SET `FIRST_NAME`='" + textBox1.Text + "',`LAST_NAME`='" + textBox2.Text + "',`ADDRESS`='" + textBox3.Text + "' WHERE ID = '" + textBox4.Text + "' ";
             MySqlConnection conectionDatabase = new MySqlConnection(connection);
             MySqlCommand databaseCommand = new MySqlCommand(query, conectionDatabase);
             databaseCommand.CommandTimeout = 60;
@@ -158,7 +158,7 @@ namespace Interfaz_del_sistema
         private void GuardarUsuario()
         {
             string connection = "datasource=localhost;port=3306;username=root;password=;database=materia";
-            string query = "INSERT INTO alumno(`ID`, `First name`, `Last name`, `Address`) VALUES (NULL, '" + textBox1.Text + "', '" + textBox2.Text + "', '" + textBox3.Text + "', '" + textBox4.Text + "')";
+            string query = "INSERT INTO alumno(`ID`, `FIRST_NAME`, `LAST_NAME`, `ADDRESS`) VALUES (NULL, '" + textBox1.Text + "', '" + textBox3.Text + "', '" + textBox2.Text + "')";
             MySqlConnection conectionDatabase = new MySqlConnection(connection);
             MySqlCommand databaseCommand = new MySqlCommand(query, conectionDatabase);
             databaseCommand.CommandTimeout = 60;
@@ -292,6 +292,11 @@ namespace Interfaz_del_sistema
         private void button5_Click(object sender, EventArgs e)
         {
             Eliminar();
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            GuardarUsuario();
         }
     }
 }

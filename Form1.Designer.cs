@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.ListViewGroup listViewGroup5 = new System.Windows.Forms.ListViewGroup("ListViewGroup", System.Windows.Forms.HorizontalAlignment.Left);
-            System.Windows.Forms.ListViewGroup listViewGroup6 = new System.Windows.Forms.ListViewGroup("ListViewGroup", System.Windows.Forms.HorizontalAlignment.Left);
-            System.Windows.Forms.ListViewGroup listViewGroup7 = new System.Windows.Forms.ListViewGroup("ListViewGroup", System.Windows.Forms.HorizontalAlignment.Left);
-            System.Windows.Forms.ListViewGroup listViewGroup8 = new System.Windows.Forms.ListViewGroup("ListViewGroup", System.Windows.Forms.HorizontalAlignment.Left);
+            System.Windows.Forms.ListViewGroup listViewGroup1 = new System.Windows.Forms.ListViewGroup("ListViewGroup", System.Windows.Forms.HorizontalAlignment.Left);
+            System.Windows.Forms.ListViewGroup listViewGroup2 = new System.Windows.Forms.ListViewGroup("ListViewGroup", System.Windows.Forms.HorizontalAlignment.Left);
+            System.Windows.Forms.ListViewGroup listViewGroup3 = new System.Windows.Forms.ListViewGroup("ListViewGroup", System.Windows.Forms.HorizontalAlignment.Left);
+            System.Windows.Forms.ListViewGroup listViewGroup4 = new System.Windows.Forms.ListViewGroup("ListViewGroup", System.Windows.Forms.HorizontalAlignment.Left);
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.textBox4 = new System.Windows.Forms.TextBox();
@@ -97,19 +97,19 @@
             this.FNAME,
             this.columnHeader2,
             this.columnHeader3});
-            listViewGroup5.Header = "ListViewGroup";
-            listViewGroup5.Name = "ID";
-            listViewGroup6.Header = "ListViewGroup";
-            listViewGroup6.Name = "F. name";
-            listViewGroup7.Header = "ListViewGroup";
-            listViewGroup7.Name = "Last Name";
-            listViewGroup8.Header = "ListViewGroup";
-            listViewGroup8.Name = "Address";
+            listViewGroup1.Header = "ListViewGroup";
+            listViewGroup1.Name = "ID";
+            listViewGroup2.Header = "ListViewGroup";
+            listViewGroup2.Name = "F. name";
+            listViewGroup3.Header = "ListViewGroup";
+            listViewGroup3.Name = "Last Name";
+            listViewGroup4.Header = "ListViewGroup";
+            listViewGroup4.Name = "Address";
             this.listView1.Groups.AddRange(new System.Windows.Forms.ListViewGroup[] {
-            listViewGroup5,
-            listViewGroup6,
-            listViewGroup7,
-            listViewGroup8});
+            listViewGroup1,
+            listViewGroup2,
+            listViewGroup3,
+            listViewGroup4});
             this.listView1.HideSelection = false;
             this.listView1.Location = new System.Drawing.Point(12, 69);
             this.listView1.Name = "listView1";
@@ -159,6 +159,7 @@
             this.button1.TabIndex = 21;
             this.button1.Text = "GUARDAR";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // label3
             // 
